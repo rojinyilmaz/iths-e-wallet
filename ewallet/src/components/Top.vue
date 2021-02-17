@@ -1,16 +1,26 @@
 <template>
-  <header>
-      top
-  </header>
+ <div class="top">
+<h1>{{headline}}</h1>
+<p>{{description}}</p>
+
+</div>
 </template>
 
 <script>
 export default {
-    name: "Top"
+    name: "Top",
+    props:{
+      headline: String,
+      description: String
+    }
 
 }
 </script>
 
 <style>
+
+p{
+  text-align: center;
+}
 
 </style>
