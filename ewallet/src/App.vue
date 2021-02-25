@@ -1,36 +1,52 @@
 <template>
   <div id="app">
-    <router-view/>
+     <router-view/>
   </div>
 </template>
-
-<script>
-export default {
-  name: "App",
-  
-}
-
-</script>
 
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+      font-family: PT Mono,monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  width: 36rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  
+}
+body {
+  background-color: rgb(251, 251, 251);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  .linkaddcard{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 10rem;
+      height: 3.5rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: black;
+      border: .125rem solid black;
+      border-radius: .5rem;
+            &:hover {  
+            background: rgb(25, 25, 25);
+            color: #ddd;
+          }
+            &:active {
+            background: rgb(25, 25, 25);
+            color: #ddd;
+            }
     }
   }
-}
 </style>

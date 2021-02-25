@@ -1,8 +1,8 @@
 <template>
   <div class="addcard">
-    <top headline="ADD A NEW BANK CARD" description="NEW CARD"/>
-    <Card />
-    <CardForm />
+    <Top headline="ADD A NEW BANK CARD" description="NEW CARD"/>
+    <Card v-bind:cardlist="cardlistadd"/>
+    <CardForm v-bind:cardlist="cardlistadd"/>
   </div>
 </template>
 
@@ -18,6 +18,18 @@ export default {
    Top,
    Card,
    CardForm
+  },
+  data() {
+  return {
+    cardlistadd: {
+      id: Date.now(),
+      cardholdername: '',
+      cardnumber: '',
+      month: '',
+      year: '',
+      vendor: ''
+    }
   }
+},
 }
 </script>
