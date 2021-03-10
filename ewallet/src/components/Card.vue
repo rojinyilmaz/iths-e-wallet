@@ -3,9 +3,9 @@
      
   <section class="cardcontainer" v-bind:class="cardlist.vendor" >
             <header class="cardheader">
-                <img v-if="cardlist.vendor == 'bitcoin'" src="../assets/chip-dark.svg" alt="Dark Chip Logo">
-                <img v-if="cardlist.vendor !== 'bitcoin'" src="../assets/chip-light.svg" alt="Light Chip Logo">
-                <img class="vendoricon" v-if="cardlist.vendor" v-bind:src="require('../assets/vendor-' + cardlist.vendor +  '.svg')"/>
+                <img v-if="cardlist.vendor == 'bitcoin'" src="@/assets/chip-dark.svg" alt="Dark Chip Logo">
+                <img v-if="cardlist.vendor !== 'bitcoin'" src="@/assets/chip-light.svg" alt="Light Chip Logo">
+                <img class="vendoricon" v-if="cardlist.vendor" v-bind:src="require('@/assets/vendor-' + cardlist.vendor +  '.svg')"/>
             </header>
 
             <main class="cardmain">

@@ -1,7 +1,5 @@
 <template>
   <section class="createcard">
-
-<Card/>
     <main  class="createcards">
       <span></span>
     <label for="number">CARD NUMBER</label>
@@ -28,7 +26,6 @@
         <option value="12">12</option>
      </select> 
       </div>
-
       <div class="yearcontainer">
     <label for="year">Year</label>
      <select class="year" name="year" v-model="cardlist.year">
@@ -50,7 +47,7 @@
 </select>
 
 <div class="linkcontainer">
-            <router-link to="/" v-bind="cardlist" @click.native="addcard">CreateCard</router-link>
+  <router-link to="/" tag="button" v-bind="cardlist" @click.native="addcard">Create Card</router-link>
 </div>
     </main>
   </section>
@@ -58,12 +55,8 @@
 
 
 <script>
-import Card from '@/components/Card.vue'
 export default {
 name: "createcards",
-  components: {
-    Card,
-  },
 props: {
   cardlist: Object,
 },
@@ -96,7 +89,7 @@ methods:{
 }
 .datecontainer {
 display: flex;
-justify-content: space-between;
+grid-gap: 1rem;
 }
     .monthcontainer {
       display: flex;

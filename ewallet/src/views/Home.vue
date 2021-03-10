@@ -2,10 +2,7 @@
   <div class="home">
     <Top headline="E-WALLET" description="ACTIVE CARD"/>
     <CardStack />
-
-    <button class="linkaddcard">
-    <router-link class="addCard" to="/AddCard" >ADD A NEW CARD</router-link>
-</button>
+      <router-link class="addCard" to="/addCard" tag="button">ADD A NEW CARD</router-link>
   </div>
 </template>
 

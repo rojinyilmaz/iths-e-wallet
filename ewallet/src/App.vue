@@ -23,22 +23,20 @@ body {
   flex-direction: row;
 }
 
-  .linkaddcard{  
-    display: flex;
-    flex-direction: column;
+
+    button {
+       display: grid;
+    place-items: center;
     align-items: center;
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 10rem;
-      height: 3.5rem;
-      font-size: 1.4rem;
-      font-weight: 600;
-      text-decoration: none;
-      color: black;
-      border: .125rem solid black;
-      border-radius: .5rem;
+    height: 4rem;
+    width: 50%;
+    margin: 2rem 0;
+    border: .125rem solid #000;
+    border-radius: .5rem;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
             &:hover {  
             background: rgb(25, 25, 25);
             color: #ddd;
@@ -48,5 +46,5 @@ body {
             color: #ddd;
             }
     }
-  }
+  
 </style>

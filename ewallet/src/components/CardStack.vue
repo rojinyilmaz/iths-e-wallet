@@ -1,6 +1,5 @@
 <template>
 <section>
-
     <Card :cardlist="card" />
   <div class="card-stack">
 
